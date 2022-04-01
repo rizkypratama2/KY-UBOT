@@ -28,7 +28,7 @@ def vcmention(user):
 
 @boy(outgoing=True, pattern=r"^\.joinvc(?: |$)(.*)")
 async def join_(event):
-    await edit_or_reply(event, f"**Hoii Aku datangg....**")
+    await edit_or_reply(event, f"**Im comming to voice chat......**")
     if len(event.text.split()) > 1:
         chat = event.chat_id
         chats = event.pattern_match.group(1)
@@ -55,13 +55,13 @@ async def join_(event):
         chats,
         stream_type=ya().pulse_stream,
     )
-    await edit.delete(event, f"**Berhasil Join Ke obrolan Suara.**", 5)
+    await edit_delete(event, f"**Berhasil Join Obrolan Suara**\n**Dalam Group {chat_id}**", 2)
 
 
 @boy(outgoing=True, pattern="^\.leavevc(?: |$)(.*)")
 async def leavevc(event):
     """ leave video chat """
-    ram = await edit_or_reply(event, "**Turun dulu....**")
+    await edit_or_reply(event, "**Gua cabut Dulu Ya....**")
     chat_id = event.chat_id
     from_user = vcmention(event.sender)
     if from_user:
@@ -69,4 +69,4 @@ async def leavevc(event):
             await call_py.leave_group_call(chat_id)
         except (memek, ajg):
             await edit_or_reply(event, f"Eh {from_user}, Lo ga ada di os ngentot!!!!!")
-        await ram.edit(f"**Babay Anak kontol, {from_user} Turun dulu...**")
+        await edit_delete(event, f"**Berhasil Keluar Obrolan Suara**\n**Dari Group {chat_id}", 1)
