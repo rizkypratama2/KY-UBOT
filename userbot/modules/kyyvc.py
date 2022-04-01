@@ -10,7 +10,7 @@ from telethon.tl import types
 from telethon.utils import get_display_name
 from telethon.tl.functions.users import GetFullUserRequest as ngentod
 from userbot import call_py
-from userbot.utils import edit_delete, edit_or_reply, edit_delete
+from userbot.utils import edit_delete, edit_or_reply
 from userbot.events import register as boy
 
 from userbot.utils.queues.queues import clear_queue
@@ -69,4 +69,4 @@ async def leavevc(event):
             await call_py.leave_group_call(chat_id)
         except (memek, ajg):
             await edit_or_reply(event, f"Eh {from_user}, Lo ga ada di os ngentot!!!!!")
-        await edit_delete(event, f"**Berhasil Keluar Obrolan Suara**\n**Dari Group {chat_id}", 1)
+        await edit_delete(event, f"**Berhasil Keluar Obrolan Suara**\n**Dari Group {chat_id}**", 1)
