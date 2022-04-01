@@ -15,7 +15,7 @@ from speedtest import Speedtest
 
 from userbot import ALIVE_NAME, CMD_HELP, StartTime, REPO_NAME, DEVS, branch
 from userbot.events import register
-
+from userbot.utils import edit_or_reply
 gesss = [
     "Wah ada Owner Gua nih",
     "Hadir ganteng 😍",
