@@ -11,6 +11,7 @@ import re
 import sys
 import time
 from pytgcalls import PyTgCalls
+from git import Repo
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 from math import ceil
@@ -36,6 +37,7 @@ redis_db = None
 load_dotenv("config.env")
 
 StartTime = time.time()
+repo = Repo()
 branch = repo.active_branch.name
 
 
