@@ -36,6 +36,8 @@ redis_db = None
 load_dotenv("config.env")
 
 StartTime = time.time()
+branch = repo.active_branch.name
+
 
 CMD_LIST = {}
 # for later purposes
