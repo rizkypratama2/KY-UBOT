@@ -13,7 +13,7 @@ from datetime import datetime
 import redis
 from speedtest import Speedtest
 
-from userbot import ALIVE_NAME, CMD_HELP, StartTime, REPO_NAME, DEVS
+from userbot import ALIVE_NAME, CMD_HELP, StartTime, REPO_NAME, DEVS, branch
 from userbot.events import register
 
 gesss = [
@@ -109,6 +109,38 @@ async def redis(pong):
                     f"OWNER : {ALIVE_NAME}\n `%sms`\n"
                     f"`{uptime}` \n" % (duration))
 
+@register(outgoing=True, pattern="^.kping$")
+async def _(pong):
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    kping = await edit_or_reply(pong, "8✊===D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8===✊D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8✊===D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8===✊D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8✊===D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8===✊D")
+    await kping.edit("8===✊D💦")
+    await kping.edit("8====D💦💦")
+    await kping.edit("**CROOTTTT PINGGGG!**")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    user= await pong.client.get_me()
+    await kping.edit(
+        f"**➾ OWNER      :** [{user.first_name}](tg://user?id={user.id}) \n"
+        f"**➾ Kecepatan : ** %sms  \n"
+        f"**➾ Branch       : ** [{branch}] \n" % (duration)) 
+
+
 
 @register(outgoing=True, pattern="^Speed$")
 async def speedtst(spd):
@@ -164,7 +196,7 @@ async def pingme(pong):
 
 
 CMD_HELP.update({
-    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` or `.pings`\
+    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Ping` or `.ping` & `.kping`\
          \n↳ : Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Speed`\
          \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
