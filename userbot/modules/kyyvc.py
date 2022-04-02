@@ -28,7 +28,7 @@ def vcmention(user):
 
 @boy(outgoing=True, pattern=r"^\.joinvc(?: |$)(.*)")
 async def join_(event):
-    await edit_or_reply(event, f"**Im comming to voice chat......**")
+    await edit_or_reply(event, f"**Hoiiii Pasti Ngeghibah Gua Yah......**")
     if len(event.text.split()) > 1:
         chat = event.chat_id
         chats = event.pattern_match.group(1)
@@ -61,7 +61,7 @@ async def join_(event):
 @boy(outgoing=True, pattern="^\.leavevc(?: |$)(.*)")
 async def leavevc(event):
     """ leave video chat """
-    await edit_or_reply(event, "**Gua cabut Dulu Ya....**")
+    await edit_or_reply(event, "**Gua cabut Dulu Lah Tod....**")
     chat_id = event.chat_id
     from_user = vcmention(event.sender)
     if from_user:
