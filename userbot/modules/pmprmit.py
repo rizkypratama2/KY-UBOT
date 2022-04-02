@@ -28,7 +28,7 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    f"**╭━━━━━━━━━━━━━━━━━╮**\n    🤙🏻SELAMAT DATANG🤙🏻\n"
+    f"**╭━━━━━━━━━━━━━━━━━╮**\n    🤙🏻WELCOME MEKIHHH🤙🏻\n"
     "**╰━━━━━━━━━━━━━━━━━╯**\n"
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
     f"**EHH MEKIH KALO NGECHAT {DEFAULTUSER} SALAM DULU YAH NGENTOD JANGAN NGESPAM KEK BOCAH AUTIS,\nTUNGGU SI {DEFAULTUSER} BALAS CHAT ELUU DULU YAHH NGENTOD**\n"
