@@ -11,13 +11,13 @@ from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@register(outgoing=True, pattern=r"^\.vidkep$")
+@register(outgoing=True, pattern=r"^\.asupan$")
 async def _(event):
     try:
         asupannya = [
             asupan
             async for asupan in event.client.iter_messages(
-                "@gadistiktokmantap", filter=InputMessagesFilterVideo
+                "@tiktody", filter=InputMessagesFilterVideo
             )
         ]
         aing = await event.client.get_me()
@@ -112,7 +112,7 @@ async def _(event):
 CMD_HELP.update(
     {
         "asupan": "**Plugin : **`asupan`\
-        \n\n  •  **Syntax :** `.vidkep`\
+        \n\n  •  **Syntax :** `.asupan`\
         \n  •  **Function : **Untuk Mengirim video asupan secara random.\
         \n\n  •  **Syntax :** `.deswo` `.deswe`\
         \n  •  **Function : **Untuk Mengirim suara desah buat lu yang sange.\
