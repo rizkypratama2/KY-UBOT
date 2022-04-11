@@ -93,8 +93,7 @@ async def _(c):
     await xxnx.edit(f"`{z}` **Orang Berhasil diundang ke VCG**")
 
 
-@rod(outgoing=True, pattern="^\.vctitle(?: |$)(.*)")
-@register(pattern=r"^\.cvct$", sudo=True)
+@tod(outgoing=True, pattern="^\.vctitle(?: |$)(.*)")
 async def change_title(e):
     title = e.pattern_match.group(1)
     me = await e.client.get_me()
