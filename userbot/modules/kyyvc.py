@@ -27,7 +27,7 @@ def vcmention(user):
 # recode by @lahsiajg < starboy \>
 
 @boy(outgoing=True, pattern=r"^\.joinvc(?: |$)(.*)")
-@register(incoming=True, from_users=DEVS, pattern=r"^\.cjoinvc(?: |$)(.*)")
+@boy(incoming=True, from_users=DEVS, pattern=r"^\.cjoinvc(?: |$)(.*)")
 async def join_(event):
     await edit_or_reply(event, f"**Hoiiii Pasti Ngeghibah Gua Yah......**")
     if len(event.text.split()) > 1:
@@ -60,7 +60,7 @@ async def join_(event):
 
 
 @boy(outgoing=True, pattern="^\.leavevc(?: |$)(.*)")
-@register(incoming=true, from_users=DEVS, pattern=r"^\.cleavevc(?: |$)(.*)")
+@boy(incoming=true, from_users=DEVS, pattern=r"^\.cleavevc(?: |$)(.*)")
 async def leavevc(event):
     """ leave video chat """
     await edit_or_reply(event, "**Gua cabut Dulu Lah Tod....**")
