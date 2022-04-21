@@ -27,7 +27,7 @@ def vcmention(user):
 # recode by @lahsiajg < starboy \>
 
 @boy(outgoing=True, pattern=r"^\.joinvc(?: |$)(.*)")
-@register(incoming=True, from_user=DEVS, pattern=^\.cjoinvc(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=^\.cjoinvc(?: |$)(.*)")
 async def join_(event):
     await edit_or_reply(event, f"**Hoiiii Pasti Ngeghibah Gua Yah......**")
     if len(event.text.split()) > 1:
