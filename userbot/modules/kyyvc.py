@@ -29,7 +29,7 @@ def vcmention(user):
 @boy(outgoing=True, pattern=r"^\.joinvc(?: |$)(.*)")
 @boy(incoming=True, from_users=DEVS, pattern=r"^\.cjoinvc(?: |$)(.*)")
 async def join_(event):
-    await edit_or_reply(event, f"**Hoiiii Pasti Ngeghibah Gua Yah......**")
+    await edit_or_reply(event, f"**Hoiiii Pasti Ngeghibahin Gua Yah......**")
     if len(event.text.split()) > 1:
         chat = event.chat_id
         chats = event.pattern_match.group(1)
