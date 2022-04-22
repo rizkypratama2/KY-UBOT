@@ -60,7 +60,7 @@ async def join_(event):
 
 
 @boy(outgoing=True, pattern="^\.leavevc(?: |$)(.*)")
-@boy(incoming=true, from_users=DEVS, pattern=r"^\.cleavevc(?: |$)(.*)")
+@boy(incoming=True, from_users=DEVS, pattern=r"^\.cleavevc(?: |$)(.*)")
 async def leavevc(event):
     """ leave video chat """
     await edit_or_reply(event, "**Gua cabut Dulu Lah Tod....**")
