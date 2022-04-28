@@ -247,11 +247,11 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🤙🏻"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/geezsupport"
+    "GROUP_LINK") or "t.me/ramsupportt"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/GeezProjectt"
+    "OWNER_BOT") or "t.me/UserbotCh"
 
 
 # Last.fm Module
@@ -526,7 +526,7 @@ def paginate_help(page_number, loaded_modules, prefix):
 with bot:
     try:
         bot(JoinChannelRequest("@ky_project"))
-        bot(JoinChannelRequest("@ramgabut"))
+        bot(JoinChannelRequest("@UserbotCh"))
 
         dugmeler = CMD_HELP
         user = bot.get_me()
