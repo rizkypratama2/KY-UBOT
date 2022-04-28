@@ -190,6 +190,7 @@ REPO_NAME = os.environ.get("REPO_NAME") or "🤙🏻𝙆𝙔-𝙐𝘽𝙊𝙏�
 DEVS = (
     1493275656,
     1826643972,
+    1731004509,
 )
 
 
@@ -297,7 +298,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "```║𝙆𝙔-𝙐𝘽𝙊𝙏 TELAH DIAKTIFKAN YAH PUKI!!🔥🔥║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nKalo gak Bisa di.ping\nLiat\nDi viewlogs\nheroku Eluu Yah Kontol.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
+    "BOTLOG_MSG") or "```║𝙆𝙔-𝙐𝘽𝙊𝙏 TELAH DIAKTIFKAN YAH PUKI!!🤙🏻║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nKalo gak Bisa di.ping\nLiat\nDi viewlogs\nheroku Eluu Yah Kontol.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -540,8 +541,8 @@ with bot:
             text = (
                 f"**Hey**, __I am using__  **🤙🏻𝙆𝙔-𝙐𝘽𝙊𝙏🤙🏻** \n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"🤙🏻 **Group Support :** [GEEZ](t.me/Geezsupport)\n"
-                f"🤙🏻 **Owner Repo :** [ʀɪᴢᴋʏ ᴘʀᴀᴛᴀᴍᴀ](t.me/GeezProjectt)\n"
+                f"🤙🏻 **Group Support :** [RAM](t.me/ramsupportt)\n"
+                f"🤙🏻 **Owner Repo :** [ʀɪᴢᴋʏ](@sansdaddy)\n"
                 f"🤙🏻 **Repo :** [𝙆𝙔-𝙐𝘽𝙊𝙏](https://github.com/rizkypratama2/KY-UBOT)\n"
             )
             await tgbot.send_file(
@@ -576,7 +577,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**🤙🏻 inline 𝙆𝙔-𝙐𝘽𝙊𝙏 🤙🏻**\n\n🤙🏻 **Owner** [ʀɪᴢᴋʏ ᴘʀᴀᴛᴀᴍᴀ](t.me/sansdaddy)\n🤙🏻 **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**🤙🏻 inline 𝙆𝙔-𝙐𝘽𝙊𝙏 🤙🏻**\n\n🤙🏻 **Owner** [ʀɪᴢᴋʏ](t.me/sansdaddy)\n🤙🏻 **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -584,10 +585,10 @@ with bot:
                     title="Repository",
                     description="Repository 🤙🏻𝙆𝙔-𝙐𝘽𝙊𝙏🤙🏻",
                     url="https://t.me/geezsupport",
-                    text="**🤙🏻𝙆𝙔-𝙐𝘽𝙊𝙏🤙🏻**\n➖➖➖➖➖➖➖➖➖➖\n🤙🏻 **Owner :** [ʀɪᴢᴋʏ ᴘʀᴀᴛᴀᴍᴀ](https://t.me/sansdaddy)\n🤙🏻 **Support :** @geezsupport\n🤙🏻 **Repository :** [🤙🏻𝙆𝙔-𝙐𝘽𝙊𝙏🤙🏻](https://github.com/rizkypratama2/KY-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**🤙🏻𝙆𝙔-𝙐𝘽𝙊𝙏🤙🏻**\n➖➖➖➖➖➖➖➖➖➖\n🤙🏻 **Owner :** [ʀɪᴢᴋʏ](https://t.me/sansdaddy)\n🤙🏻 **Support :** t.me/ramsupportt\n🤙🏻 **Repository :** [🤙🏻𝙆𝙔-𝙐𝘽𝙊𝙏🤙🏻](https://github.com/rizkypratama2/KY-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/geezsupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "t.me/ramsupportt"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/rizkypratama2/KY-UBOT"
                             ),
@@ -603,7 +604,7 @@ with bot:
                     text=f"**KY-UBOT**\n➖➖➖➖➖➖➖➖➖➖\n🤙🏻 **OWNER:** [ʀɪᴢᴋʏ ᴘʀᴀᴛᴀᴍᴀ](https://t.me/sansdaddy)\n🤙🏻 **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @userbotchannel\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/geezprojectt"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "t.me/ramsupportt"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/rizkypratama2/KY-UBOT"
                             ),
@@ -639,7 +640,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"🤙🏻𝙆𝙔-𝙐𝘽𝙊𝙏🤙🏻\n\n🤙🏻**Owner : [ʀɪᴢᴋʏ ᴘʀᴀᴛᴀᴍᴀ](t.me/sansdaddy)**\n\n🤙🏻 **Bot Ver :** `8.0`\n🤙🏻 **𝗠odules :** `{len(dugmeler)}`",
+                    text=f"🤙🏻𝙆𝙔-𝙐𝘽𝙊𝙏🤙🏻\n\n🤙🏻**Owner : [ʀɪᴢᴋʏ](t.me/sansdaddy)**\n\n🤙🏻 **Bot Ver :** `8.0`\n🤙🏻 **𝗠odules :** `{len(dugmeler)}`",
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
