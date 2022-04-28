@@ -16,6 +16,7 @@ from speedtest import Speedtest
 from userbot import ALIVE_NAME, CMD_HELP, StartTime, REPO_NAME, DEVS, branch
 from userbot.events import register
 from userbot.utils import edit_or_reply
+
 gesss = [
     "Wah ada Owner Gua nih",
     "Hadir ganteng 😍",
@@ -44,6 +45,8 @@ brb = [
     "Mau nonton bokep kah?",
     "Bang Elegant telah off.",
 ]
+
+eor = edit_or_reply
 
 async def get_readable_time(seconds: int) -> str:
     count = 0
@@ -86,12 +89,12 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("Assalamualaikum..")
+    kyubot = await eor(pong, "Assalamualaikum..")
     await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**TEGANGAN KONTOOLLLL!!**\n**KECEPATAN KONTOL** : `%sms`\n**DURASI KONTOL** : `{uptime}🕛`" % (duration))
-
+    await pong.client.send_message(pong.chat_id, f"**TEGANGAN KONTOOLLLL!!**\n**KECEPATAN KONTOL** : `%sms`\n**DURASI KONTOL** : `{uptime}🕛`" % (duration), reply_to=pong.reply_to_msg_id)
+    await kyubot.delete()
 
 @register(outgoing=True, pattern="^Ping$")
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cpi$")
@@ -105,9 +108,11 @@ async def redis(pong):
     await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"{REPO_NAME}!!\n"
+    await pong.client.send_message(pong.chat_id, 
+                    f"{REPO_NAME}!!\n"
                     f"OWNER : {ALIVE_NAME}\n `%sms`\n"
-                    f"`{uptime}` \n" % (duration))
+                    f"`{uptime}` \n" % (duration), reply_to=pong.reply_to_msg_id)
+    await pong.delete()
 
 @register(outgoing=True, pattern="^.kping$")
 async def _(pong):
