@@ -115,6 +115,7 @@ async def redis(pong):
     await pong.delete()
 
 @register(outgoing=True, pattern="^.kping$")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.ckping$")
 async def _(pong):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
